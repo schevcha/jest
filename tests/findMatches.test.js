@@ -21,7 +21,7 @@ describe('findMatches', () => {
     })
 
     it('Сравнение одинаковых по ссылке вложенных объектов', () => {
-        const nestedObj =  { 1: 2 };
+        const nestedObj = { 1: 2 };
 
         expect(findMatches([1, 2, nestedObj], [nestedObj, 4, 5])).toEqual([nestedObj])
     })
